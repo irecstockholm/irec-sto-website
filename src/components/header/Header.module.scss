@@ -8,7 +8,9 @@
   align-items: stretch;
   padding: 0 3.2rem;
   grid-area: header;
-  .headerLogo {
+  .headerLink {
+    text-decoration: none;
+    color: #fff;
     display: flex;
     align-items: center;
     padding-top: 1.6rem;

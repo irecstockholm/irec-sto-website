@@ -1,17 +1,18 @@
 import React from 'react';
+import { Routes, Route } from "react-router-dom";
 import './App.scss';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import Layout from './components/Layout/Layout';
+import Home from './pages/Home/Home';
+import Events from './pages/Events/Events';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main className="main">
-        Main page
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path='/events' element={<Events />} />
+      </Route>
+    </Routes>
   );
 }
 
