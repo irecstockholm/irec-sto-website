@@ -3,4 +3,83 @@
   background-color: #242424;
   color: #fff;
   padding: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  column-gap: 8px;
+  grid-template-areas: 
+  'logo logo'
+  'contact address'
+  'socmed curches'
+  'irecindo irecindo';
+  font-size: 1.6rem;
+
+  h3 {
+    margin: 0 0 1.2rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 200;
+    color: #b3b3b3;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0;
+      margin-bottom: 1.6rem;
+      padding: 0;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+      'logo contact adress'
+      'socmed curches irecindo'
+    }
+}
+
+.footerCol {
+  margin-bottom: 1.6rem;
+}
+
+.footerLogo {
+  display: flex;
+  grid-area: logo;
+
+  svg {
+    height: 80px;
+    width: 44px;
+  }
+  .footerLogoText {
+    margin-left: 1.6rem;
+  }
+  h2 {
+    font-weight: 500;
+    margin: 0;
+  }
+  h3 {
+    margin: 0.8rem 0 0 0;
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: #b3b3b3;
+  }
 }
