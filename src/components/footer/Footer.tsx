@@ -1,11 +1,11 @@
 import cn from 'classnames';
-import HeaderLogo from '../Header/Logo';
+import LogoIREC from '../../icons/Logo';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
   return <div className={styles.footer}>
     <div className={cn(styles.footerCol, styles.footerLogo)}>
-        <HeaderLogo />
+        <LogoIREC />
         <div className={styles.footerLogoText}>
           <h2>IREC Stockholm</h2>
           <h3>International Reformed <br/>Evangelical Church</h3>

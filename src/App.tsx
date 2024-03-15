@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import './App.scss';
+import './wordpress-styles/Common.scss';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import Events from './pages/Events/Events';

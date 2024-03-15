@@ -23,6 +23,12 @@
     margin-left: 1.6rem;
     letter-spacing: 0.1rem;
   }
+
+  @media (min-width: 768px) {
+    .headerLink {
+      padding: 0;
+    }
+  }
 }
 
 .menuButtonWrapper {
