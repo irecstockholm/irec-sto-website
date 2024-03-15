@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import cn from 'classnames';
-import HeaderLogo from './Logo';
+import LogoIREC from '../../icons/Logo';
 import styles from './Header.module.scss';
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
   return <header className={styles.header}>
     <div className={styles.headerLogo}>
       <Link to='/' className={styles.headerLink}>
-        <HeaderLogo />
+        <LogoIREC />
         <h1 className={styles.headerTitle}>IREC Stockholm</h1>
       </Link>
     </div>

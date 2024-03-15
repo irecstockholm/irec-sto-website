@@ -1,0 +1,26 @@
+.wp-block-button {
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &:after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 34px;
+    margin-left: 0.8rem;
+    border-radius: 15px;
+    background-image: url(/images/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.is-layout-flex {
+  display: flex;
+}
+
+.is-no-wrap {
+  flex-wrap: nowrap;
+}
