@@ -14,7 +14,7 @@ const Footer = () => {
 
     <div className={styles.footerCol}>
       <h3>Contact</h3>
-      <p>+46 72 593 98 38</p>
+      <p>+46 73 675 11 07</p>
       <p>irec.stockholm@gmail.com</p>
     </div>
 

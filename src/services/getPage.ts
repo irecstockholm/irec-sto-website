@@ -18,3 +18,17 @@ export const getPage = (id: string) => {
   }
   `
 }
+
+export const getPost = () => {
+  return gql`
+  {
+    post(id:"yearly-activities", idType: SLUG) {
+      id
+      content
+      title
+      acf
+    }
+      
+  }
+  `;
+}

@@ -9,10 +9,9 @@
     'main'
     'footer';
   min-height: 100vh;
+  width: 100%;
 }
 
 .main {
   grid-area: main;
-  margin-left: 3.2rem;
-  margin-right: 3.2rem;
 }
