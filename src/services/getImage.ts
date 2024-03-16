@@ -12,3 +12,23 @@ export const getFeaturedImage = (id: string) => {
   }
   `
 }
+
+export const getYearlyGallery = () => {
+  return gql`
+  {
+    mediaItems(where: {search: "Yearly events"}) {
+      edges {
+        node {
+          id
+          slug
+          databaseId
+          mediaItemUrl
+          caption
+          description
+          title
+        }
+      }
+    }
+  }
+  `;
+}

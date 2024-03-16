@@ -1,6 +1,79 @@
-.frontpage-banner {
+.wp-frontpage-banner {
   justify-content: space-between;
+  padding-bottom: 3.2rem;
+
   div:first-child {
-    max-width: 640px;
+    max-width: 440px;
+  }
+  @media (min-width: 768px) {
+    div:first-child {
+      max-width: 640px;
+    }
+  }
+}
+
+.wp-frontpage-activities {
+  max-width: 100%;
+  background-color: #242424;
+  color: #fff;
+  padding-top: 3.2rem;
+  padding-bottom: 4.0rem;
+  justify-content: center;
+
+  > div {
+    padding: 0;
+  }
+
+  figure {
+    &, img {
+      height: auto;
+      max-width: 600px;
+    }
+  }
+
+  details {
+    margin-bottom: 2.0rem;
+    border-top: 1px solid #4d4d4d;
+    padding-top: 1.6rem;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 4px;
+      background-color: #fff;
+      right: 0;
+      top: 32px;
+      border-radius: 32px;
+    }
+    &:before {
+      transition: all 0.2s ease-in;
+      transform: rotate(90deg);
+      opacity: 1;
+      right: 0px;
+    }
+
+    > summary {
+      list-style: none;
+      cursor: pointer;
+      font-size: 2.8rem;
+      font-weight: 500;
+    }
+
+    &[open] {
+      &:before {
+        transform: rotate(0deg);
+        opacity:0;
+      }
+    }
+  }
+}
+
+.wp-yearly-title {
+  padding: 3.2rem 6.4rem;
+  p {
+    max-width: 500px;
   }
 }

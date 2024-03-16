@@ -19,8 +19,36 @@
 
 .is-layout-flex {
   display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
 }
 
-.is-no-wrap {
+.is-nowrap {
   flex-wrap: nowrap;
+}
+
+.wp-block-group {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+
+  figure {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
 }
