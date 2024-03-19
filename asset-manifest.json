@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.fa62e0fe.css",
-    "main.js": "/static/js/main.0456b30b.js",
-    "static/js/453.ba5699f2.chunk.js": "/static/js/453.ba5699f2.chunk.js",
-    "index.html": "/index.html",
-    "static/media/arrow.svg": "/static/media/arrow.235d65fd5f176c502be2.svg",
-    "main.fa62e0fe.css.map": "/static/css/main.fa62e0fe.css.map",
-    "main.0456b30b.js.map": "/static/js/main.0456b30b.js.map",
-    "453.ba5699f2.chunk.js.map": "/static/js/453.ba5699f2.chunk.js.map"
+    "main.css": "/irec-sto-website/static/css/main.6a5242bc.css",
+    "main.js": "/irec-sto-website/static/js/main.b0111daf.js",
+    "static/js/453.ba5699f2.chunk.js": "/irec-sto-website/static/js/453.ba5699f2.chunk.js",
+    "index.html": "/irec-sto-website/index.html",
+    "static/media/arrow.svg": "/irec-sto-website/static/media/arrow.235d65fd5f176c502be2.svg",
+    "main.6a5242bc.css.map": "/irec-sto-website/static/css/main.6a5242bc.css.map",
+    "main.b0111daf.js.map": "/irec-sto-website/static/js/main.b0111daf.js.map",
+    "453.ba5699f2.chunk.js.map": "/irec-sto-website/static/js/453.ba5699f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa62e0fe.css",
-    "static/js/main.0456b30b.js"
+    "static/css/main.6a5242bc.css",
+    "static/js/main.b0111daf.js"
   ]
 }
