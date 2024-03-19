@@ -70,7 +70,7 @@
 
 .slideItem__textWrapper {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 1.6rem;
   flex-direction: column;
 
@@ -100,6 +100,10 @@
     opacity: 0.4;
     cursor: pointer;
     justify-content: center;
+
+    &:after {
+      display: none;
+    }
 
     &:hover,
     &.active {

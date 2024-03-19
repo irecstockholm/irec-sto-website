@@ -1,27 +1,19 @@
 import { useEffect, useState } from 'react';
 import { useQuery } from '@apollo/client';
-import * as DOMPurify from 'dompurify';
 import styles from './Home.module.scss';
 import './HomeWP.scss';
-import { getPage } from '../../services/getPage';
+import { getPage } from '../../services/getContent';
 import { getYearlyGallery } from '../../services/getImage';
 import { SlideItemProps } from './Slider/types';
 import Slider from './Slider/Slider';
+import { sanitizeContent } from '../../utils/helpers';
 
 const Home = () => {
   const { loading, error, data } = useQuery(getPage("welcome-to-irec-stockholm"));
   const {loading: galleryLoading, error: galleryError, data: galleryData} = useQuery(getYearlyGallery());
   
-  const [pageContent, setPageContent] = useState("");
   const [yearlySlides, setYearylySlides] = useState<SlideItemProps[]>([]);
 
-  useEffect(() => {
-    if (data) {
-      const content = data.page.content.trim("\n");
-      const clean = DOMPurify.sanitize(content);
-      setPageContent(clean);
-    }
-  }, [data]);
 
   useEffect(() => {
     if (galleryData) {
@@ -37,8 +29,11 @@ const Home = () => {
 
   return (
     <>
-      <div className={styles.homepage} dangerouslySetInnerHTML={{__html: pageContent}}>
-      </div>
+      {
+        data && <div className={styles.homepage} dangerouslySetInnerHTML={{__html: data.page.content}}>
+        </div>
+      }
+      
       <Slider slides={yearlySlides} />
     </>
   );
