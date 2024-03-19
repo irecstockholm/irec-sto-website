@@ -22,7 +22,7 @@ const Header = () => {
       <div className={styles.closeNav} onClick={() => setIsNavShown(false)}>Close</div>
       <NavLink to='/' className={({isActive}) => isActive ? styles.active : ''}>Home</NavLink>
       <NavLink to='/events' className={({isActive}) => isActive ? styles.active : ''}>News &amp; Events</NavLink>
-      <NavLink to='/church' className={({isActive}) => isActive ? styles.active : ''}>Our Church</NavLink>
+      <NavLink to='/our-church' className={({isActive}) => isActive ? styles.active : ''}>Our Church</NavLink>
     </nav>
   </header>;
 }

@@ -10,11 +10,12 @@ button {
   color: #fff;
   display: grid;
   grid-auto-rows: max-content;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows:1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
-    'image image'
-    'content time';
+    'image'
+    'time'
+    'content';
     column-gap: 7.2rem;
 
   .featuredEvent__image {
@@ -39,6 +40,11 @@ button {
 
   @media (min-width: 768px) {
     padding: 3.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    'image image'
+    'content time';
   }
 }
 

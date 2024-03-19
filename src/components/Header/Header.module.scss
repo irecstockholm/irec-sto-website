@@ -51,7 +51,9 @@
   &:before {
     width: 24px;
     height: 2px;
+    margin: 0;
     background-color: #fff;
+    background-image: none;
   }
   &:after,
   &:before {

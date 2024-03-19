@@ -1,0 +1,121 @@
+.ourChurch__opening {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto;
+  column-gap: 4.0rem;
+
+  a {
+    font-weight: 500;
+  }
+
+  >.wp-block-group {
+    padding: 0;
+  }
+
+  .ourChurch__address {
+    padding-top: 0;
+    h3 {
+      margin: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding-bottom: 0.8rem;
+      padding-top: 0.8rem;
+      font-weight: 300;   
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    .ourChurch__address {
+      padding-top: 4.0rem;
+    }
+  }
+}
+
+#mapPlaceholder {
+  width: 100%;
+  height: 400px;
+}
+
+.mapWrapper {
+  position: relative;
+  padding: 3.2rem;
+  button, a {
+    &:after,
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.mapMarker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2.0rem;
+  font-size: 1.6rem;
+  background-color: #fff;
+}
+
+.mapMarker__link {
+  display: block;
+  font-weight: 500;
+}
+
+.church-history {
+  display: flex;
+  flex-direction: column;
+
+  > .wp-block-group {
+    flex-direction: column;
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.church-pastor {
+  padding-bottom: 6.0rem;
+  h2 {
+    padding-left: 1.6rem;
+    margin-bottom: 1.6rem;
+    margin-top: 6.4rem;
+  }
+
+  >.wp-block-group {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wp-block-image {
+    width: 300px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      padding-left: 3.2rem;
+    }
+    >.wp-block-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

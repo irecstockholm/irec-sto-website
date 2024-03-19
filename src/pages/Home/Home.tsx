@@ -6,7 +6,7 @@ import { getPage } from '../../services/getContent';
 import { getYearlyGallery } from '../../services/getImage';
 import { SlideItemProps } from './Slider/types';
 import Slider from './Slider/Slider';
-import { sanitizeContent } from '../../utils/helpers';
+import Loader from '../../components/Loader/Loader';
 
 const Home = () => {
   const { loading, error, data } = useQuery(getPage("welcome-to-irec-stockholm"));
@@ -30,11 +30,16 @@ const Home = () => {
   return (
     <>
       {
-        data && <div className={styles.homepage} dangerouslySetInnerHTML={{__html: data.page.content}}>
-        </div>
+        loading && <Loader />
       }
-      
-      <Slider slides={yearlySlides} />
+      {
+        data && (
+          <>
+            <div className={styles.homepage} dangerouslySetInnerHTML={{__html: data.page.content}}></div>
+            <Slider slides={yearlySlides} />
+          </>
+        )
+      }
     </>
   );
 }
