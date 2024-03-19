@@ -4,6 +4,7 @@
   "repository": {
     "url": "https://github.com/irecstockholm/irec-sto-website"
   },
+  "homepage": "https://irecstockholm.github.io/irec-sto-website",
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
