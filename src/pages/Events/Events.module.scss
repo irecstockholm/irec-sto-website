@@ -1,0 +1,111 @@
+@import '../../styles/mixins.scss';
+
+button {
+  @include button-style;
+}
+
+.featuredEvent {
+  padding: 1.6rem;
+  background-color: #242424;
+  color: #fff;
+  display: grid;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:1fr auto;
+  grid-template-areas:
+    'image image'
+    'content time';
+    column-gap: 7.2rem;
+
+  .featuredEvent__image {
+    grid-area: image;
+    height: 0;
+    padding-bottom: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .featuredEvent__titleContent {
+    grid-area: content;
+  }
+
+  .featuredEvent__timeVenue {
+    grid-area: time;
+    h4 {
+      margin-top: 4.0rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 3.2rem;
+  }
+}
+
+.allEvents {
+  padding: 1.6rem;
+  h4 {
+    margin: 0.4rem 0 0;
+    padding: 0;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .allEvents__link {
+    color: #242424;
+    @include button-style;
+  }
+  .allEvents__listItem {
+    display: grid;
+    row-gap: 1.6rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+      'image'
+      'time'
+      'titleContent';
+    border-bottom: 1px solid #dbdbdb;
+    padding: 3.2rem 0 1.6rem 0;
+  }
+  .allEvents__date {
+    grid-area: time;
+    p {
+      margin: 0;
+    }
+  }
+  .allEvents__titleContent {
+    grid-area: titleContent;
+  }
+  .allEvents__image {
+    grid-area: image;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: 768px) {
+    padding: 3.2rem;
+    .allEvents__listItem {
+      grid-template-columns: 1fr 3fr 2fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+        'time titleContent image';
+      column-gap: 2.0rem;
+      justify-content: start;
+    }
+    .allEvents__image {
+      padding-bottom: 75%;
+      background-position: top left;
+    }
+    .allEvents__titleContent {
+      p {
+        max-width: 580px;
+      }
+    }
+  }
+}
