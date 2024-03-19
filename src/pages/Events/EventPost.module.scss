@@ -38,6 +38,10 @@
   @media (min-width: 1048px) {
     padding: 4.0rem 3.2rem;
 
+    h2 {
+      max-width: 580px;
+    }
+
     .eventPost__timeWrapper {
       position: absolute;
       right: 20%;

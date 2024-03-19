@@ -11,6 +11,7 @@ export const getPage = (id: string) => {
       featuredImage {
         node {
           id
+          mediaItemUrl
         }
       }
       uri
@@ -22,7 +23,7 @@ export const getPage = (id: string) => {
 export const getEvents = (filterType: string, filterValue: string) => {
   return gql`
   {
-    posts(where: {${filterType}: "${filterValue}"}){
+    posts(where: {${filterType}: "${filterValue}"}, last: 10){
       nodes {
         date
         id

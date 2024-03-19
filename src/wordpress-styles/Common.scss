@@ -1,6 +1,6 @@
 @import '../styles/mixins.scss';
 
-.wp-block-button {
+.wp-block-button__link {
   @include button-style;
 }
 

@@ -3,6 +3,7 @@ import styles from './Events.module.scss';
 import { getEvents } from '../../services/getContent';
 import { getExcerpt } from '../../utils/helpers';
 import { useEffect, useState } from 'react';
+import Loader from '../../components/Loader/Loader';
 
 interface EventData {
   image: string;
@@ -50,6 +51,9 @@ const Events = () => {
 
   return (
     <>
+      {
+        loading && <Loader />
+      }
       <div className={styles.featuredEvent}>
         <div className={styles.featuredEvent__image} style={{ backgroundImage: `url(${featuredEvent.image})` }}></div>
         <div className={styles.featuredEvent__titleContent}>
