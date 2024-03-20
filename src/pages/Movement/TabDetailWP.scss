@@ -1,0 +1,37 @@
+.wp-tabDetail__contentWrapper {
+  position: relative;
+  .wp-tabDetail__content {
+    display: none;
+
+    h3 {
+      margin-top: 0;
+      line-height: 2.8rem;
+    }
+
+    &.active {
+      display: block;
+    }
+
+    ol {
+      line-height: 2.4rem;
+      li {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+}
+
+.wp-tabDetail__summary {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .wp-summaryLink {
+    margin-bottom: 3.2rem;
+    a {
+      &.active {
+        font-weight: 500;
+      }
+    }
+  }
+}

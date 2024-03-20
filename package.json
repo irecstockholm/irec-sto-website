@@ -1,7 +1,7 @@
 {
   "name": "irec-sto-website",
   "version": "0.1.0",
-  "homepage": "https://irecstockholm.github.io/irec-sto-website",
+  "homepage": "https://live.grii-stockholm.org",
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
