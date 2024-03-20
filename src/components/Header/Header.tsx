@@ -23,6 +23,7 @@ const Header = () => {
       <NavLink to='/' className={({isActive}) => isActive ? styles.active : ''}>Home</NavLink>
       <NavLink to='/events' className={({isActive}) => isActive ? styles.active : ''}>News &amp; Events</NavLink>
       <NavLink to='/our-church' className={({isActive}) => isActive ? styles.active : ''}>Our Church</NavLink>
+      <NavLink to='/movement' className={({isActive}) => isActive ? styles.active : ''}>The Movement</NavLink>
     </nav>
   </header>;
 }

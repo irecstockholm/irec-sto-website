@@ -8,6 +8,33 @@ export const getPage = (id: string) => {
       databaseId
       title
       content
+      children {
+        nodes {
+          slug
+          uri
+          id
+        }
+      }
+      featuredImage {
+        node {
+          id
+          mediaItemUrl
+        }
+      }
+      uri
+    }
+  }
+  `
+}
+
+export const getPageById = (id: string) => {
+  return gql`
+  {
+    page(id: "${id}", idType: ID) {
+      id
+      databaseId
+      title
+      content
       featuredImage {
         node {
           id
