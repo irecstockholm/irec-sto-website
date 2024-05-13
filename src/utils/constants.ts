@@ -1,1 +1,1 @@
-export const CONTENT_URL = "https://content.grii-stockholm.org/graphql";
+export const CONTENT_URL = "https://contents.irec-stockholm.org/graphql";
