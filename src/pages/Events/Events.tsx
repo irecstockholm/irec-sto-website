@@ -14,7 +14,7 @@ interface EventData {
 }
 
 const getEventSummary = (eventData: any): EventData => {
-  const image = eventData.featuredImage.node.mediaItemUrl;
+  const image = eventData.featuredImage?.node?.mediaItemUrl;
   const title = eventData.title;
   const content = getExcerpt(eventData.content);
   const date = eventData.excerpt;
