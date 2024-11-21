@@ -50,7 +50,7 @@ export const getPageById = (id: string) => {
 export const getEvents = (filterType: string, filterValue: string) => {
   return gql`
   {
-    posts(where: {${filterType}: "${filterValue}"}, last: 10){
+    posts(where: {${filterType}: "${filterValue}"}, first: 20){
       nodes {
         date
         id
