@@ -8,7 +8,7 @@ const Footer = () => {
         <LogoIREC />
         <div className={styles.footerLogoText}>
           <h2>IREC Stockholm</h2>
-          <h3>International Reformed <br/>Evangelical Church</h3>
+          <h3>International Reformed <br/>Evangelical Church <br/>Organization number: 252005-0903</h3>
         </div>
     </div>
 
