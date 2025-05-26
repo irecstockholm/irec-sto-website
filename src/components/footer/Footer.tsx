@@ -27,7 +27,7 @@ const Footer = () => {
 
     <div className={styles.footerCol}>
       <ul>
-        <li><a href='3. https://www.instagram.com/irec.stockholm' target='_blank' rel='noreferrer'>Instagram</a></li>
+        <li><a href='https://www.instagram.com/irec.stockholm' target='_blank' rel='noreferrer'>Instagram</a></li>
         <li><a href='https://www.facebook.com/people/PRII-Stockholm-IREC-Stockholm/100089208450489/?locale2=en' target='_blank' rel='noreferrer'>Facebook</a></li>
         <li><a href='https://www.youtube.com/channel/UCJGpw2y2fAQ97CMXRpdPGMw' target='_blank' rel='noreferrer'>Youtube</a></li>
       </ul>
