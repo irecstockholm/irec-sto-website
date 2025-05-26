@@ -21,13 +21,13 @@ const Footer = () => {
     <div className={styles.footerCol}>
       <h3>Address</h3>
       <p>IREC Stockholm</p>
-      <p><a href='https://maps.app.goo.gl/92L6XevnhJQAqp7YA' rel='noreferrer' target='_blank'>Kristet Center, Hagalundsgatan 9</a></p>
-      <p>Solna, Stockholm</p>
+      <p><a href='https://maps.app.goo.gl/g8RKKjJ7aixyCanA7' rel='noreferrer' target='_blank'>Storgatan 49, 17152 Solna</a></p>
+      <p>Stockholm</p>
     </div>
 
     <div className={styles.footerCol}>
       <ul>
-        <li><a href='https://www.instagram.com/irec.europe/' target='_blank' rel='noreferrer'>Instagram</a></li>
+        <li><a href='3. https://www.instagram.com/irec.stockholm' target='_blank' rel='noreferrer'>Instagram</a></li>
         <li><a href='https://www.facebook.com/people/PRII-Stockholm-IREC-Stockholm/100089208450489/?locale2=en' target='_blank' rel='noreferrer'>Facebook</a></li>
         <li><a href='https://www.youtube.com/channel/UCJGpw2y2fAQ97CMXRpdPGMw' target='_blank' rel='noreferrer'>Youtube</a></li>
       </ul>
